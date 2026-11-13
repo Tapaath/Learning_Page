@@ -312,9 +312,9 @@ if(matchMedia('(prefers-reduced-motion: reduce)').matches){show(cur)}else{go(cur
 <script>
 /* ===== ใส่ลิงก์ SharePoint ของคู่มือตรงนี้ ===== */
 var GUIDE_LINKS={
-  "internal-learning": "",  /* คู่มือเข้าร่วมการเรียนรู้ภายใน */
-  "external-training": "",  /* คู่มือขอฝึกอบรมและสัมมนาภายนอก */
-  "manager": ""             /* บทบาทหัวหน้างานในการพัฒนาพนักงาน */
+  "internal-learning": "https://365thaiwah-my.sharepoint.com/:b:/g/personal/neetap164_thaiwah_com/IQAeyluc01vIR5axpeeGtaT3AVSyCZ8TMHGB1njHX7cGJDc?e=uNoBrU",  /* คู่มือเข้าร่วมการเรียนรู้ภายใน */
+  "external-training": "https://365thaiwah-my.sharepoint.com/:b:/g/personal/neetap164_thaiwah_com/IQBCmYG7vM2-SJyY391S7CkgAeUelKllV-7Ax1Iw1COaMf8?e=fOk0YT",  /* คู่มือขอฝึกอบรมและสัมมนาภายนอก */
+  "manager": "https://365thaiwah-my.sharepoint.com/:b:/g/personal/neetap164_thaiwah_com/IQAT2i5E3cyYR4fpst5MIZH8AVrWEX7CPICgRTuS_TIznBg?e=KKEU1c"             /* บทบาทหัวหน้างานในการพัฒนาพนักงาน */
 };
 document.querySelectorAll('a[data-guide]').forEach(function(a){var u=GUIDE_LINKS[a.dataset.guide];if(u){a.href=u}else{a.removeAttribute('target');a.addEventListener('click',function(e){e.preventDefault()});a.style.opacity=.5;a.title='ยังไม่ได้ใส่ลิงก์ SharePoint'}});
 </script>
